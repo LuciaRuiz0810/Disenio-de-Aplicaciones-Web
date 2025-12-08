@@ -1,0 +1,98 @@
+/* Variables*/
+:root {
+    --color-cabecera: #efc1a6;
+    --color-menu-superior: #F5E6A0;
+    --color-menu-inferior: #bff4a0;
+    --color-contenidos: #a0f0f4;
+    --color-lateral: #b4b4e4;
+    --color-pie: #E9A599;
+    --color-fondo: #F5F5DC;
+    --ancho-contenedor: 980px;
+    --ancho-menu: 180px;
+    --ancho-contenidos: 650px;
+    --ancho-lateral: 150px;
+    --altura-menu-superior: 120px;
+    --altura-menu-inferior: 240px;
+    --altura-contenido: 360px;
+}
+
+/* Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: Georgia, serif;
+}
+
+/* Contenedor principal */
+.contenedor {
+    width: var(--ancho-contenedor);
+    margin: 0 auto;
+}
+
+/* Cabecera */
+.cabecera {
+    background-color: var(--color-cabecera);
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Contenedor de contenido*/
+.contenido {
+    overflow: hidden;
+}
+
+/* Menú lateral izquierdo*/
+.menu {
+    float: left;
+    width: var(--ancho-menu);
+}
+
+.menu-superior {
+    background-color: var(--color-menu-superior);
+    height: var(--altura-menu-superior);
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.menu-inferior {
+    background-color: var(--color-menu-inferior);
+    height: var(--altura-menu-inferior);
+}
+
+/* Contenidos*/
+.contenidos {
+    float: left;
+    width: var(--ancho-contenidos);
+    background-color: var(--color-contenidos);
+    height: var(--altura-contenido);
+    padding: 160px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Lateral */
+.lateral {
+    float: left;
+    width: var(--ancho-lateral);
+    background-color: var(--color-lateral);
+    height: var(--altura-contenido);
+    padding: 160px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Pie de página */
+.pie-pagina {
+    clear: both;
+    background-color: var(--color-pie);
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
