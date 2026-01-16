@@ -1,0 +1,43 @@
+@keyframes colores{
+	from{background: #93eb3c;}
+	to{background: #21295c;}
+	/* 0%{background: #93eb3c;}
+	25%{background: #1c7293; width: 300px}
+	50%{background: #065a82; width: 400px}
+	75%{background: #1b3b6f; width: 300px}
+	100%{background: #93eb3c; width: 200px} */
+}
+@keyframes movimiento{
+  /* from { 
+    left: 0px; 
+  }  
+  to { 
+    left: 350px;
+  }  */
+}
+@keyframes rotacion { 
+  /* from { 
+    transform: rotate(-18deg); 
+  } 
+  65% { 
+    transform: rotate(18deg); 
+  } 
+  to { 
+    transform: rotate(0deg); 
+  }  */
+} 
+.caja{
+	width: 200px;
+	height: 200px;
+	background: #93eb3c;
+	position: relative;
+}
+.caja:hover{
+	animation: colores 5s infinite;
+	/* animation: movimiento 5s infinite; */
+	/* animation: rotacion 5s infinite; */
+}
+
+/* .animcaja{
+	animation: movimiento 5s infinite;
+} */

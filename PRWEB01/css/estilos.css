@@ -1,0 +1,1162 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+/* CONFIGURACIÓN VARIABLES */
+:root {
+    --color-primario: #003A7F;
+    --color-secundario: #0094E9;
+    --color-texto-principal: #000;
+    --color-texto-secundario: #FFF;
+    --color-fondo-principal: #FFF;
+    --fuente-principal: "Quicksand", sans-serif;
+}
+
+/* ESTILOS GENERALES MÓVIL*/
+
+body {
+    font-family: var(--fuente-principal);
+    color: var(--color-texto-principal);
+    background-color: var(--color-fondo-principal);
+    margin: 0;
+    padding: 0;
+}
+
+/*Formato general para las secciones*/
+section {
+    display: flex;
+    flex-direction: column; /*Todo en columna*/
+    align-items: center; /*Contenido centrado*/
+    text-align: center; /*Texto centrado*/
+}
+
+/* MENÚ DE NAVEGACIÓN INDEX*/
+.navegacion {
+    display: flex;
+    flex-direction: column; /*En fila (logo y menú)*/
+    border: 1px solid var(--color-primario);
+    background-color: var(--color-fondo-principal);
+}
+
+#logo_img {
+    width: 70%;
+    height: 6vh;
+    padding: 1vh 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: var(--color-primario);
+}
+
+li {
+    border: 1px solid var(--color-primario);
+    text-align: center;
+    width: 100%;
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    padding: 1vh 0;
+}
+
+nav a.activo {
+    color: var(--color-secundario);
+    font-weight: 600;
+}
+
+nav a.no_activo {
+    color: var(--color-texto-principal);
+    font-weight: 400;
+}
+
+.boton a,
+.boton_info a {
+    text-decoration: none;
+    color: var(--color-fondo-principal);
+}
+
+/*SECCIÓN 1 INDEX*/
+
+.animacion {
+    position: relative;
+    min-height: 60vh;
+    background-attachment: fixed; /*El contenido se mueve, el fondo no*/
+    background-size: cover; /*La imagen cubre todo el contenedor*/
+    background-position: center; /*Centra la imagen en el fondo*/
+    background-repeat: no-repeat; /*Hace que se muestre solo una vez*/
+}
+
+/*El contenido del div se agrupa en columnas, texto centrado y elementos centrados*/
+.seccion1 div {
+    width: 65%;
+    text-align: center;
+    color: var(--color-texto-secundario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5vh;
+}
+
+.titulo {
+    font-size: 4vh;
+}
+
+.subtitulo {
+    font-size: 2.5vh;
+    margin-top: 0.1vh;
+}
+
+.boton {
+    padding: 1vh;
+    background-color: var(--color-secundario);
+    height: 6vh;
+    border-radius: 5px;
+    /*Centra el texto del botón*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    color: var(--color-secundario);
+}
+
+.seccion1.animacion {
+    justify-content: center; /*Centra el contennido de la sección*/
+    background-image: url("../imagenes/fondo-interred-p.jpg");
+    background-position: center top; /*Centra la imagen por arriba*/
+}
+
+/*SECCIÓN 2*/
+
+.seccion2 {
+    background-color: var(--color-secundario);
+}
+
+.seccion2_nosotros {
+    background-color: var(--color-fondo-principal);
+        gap: 3vh;
+}
+
+.introduccion {
+    width: 90%;
+    color: var(--color-texto-secundario);
+    font-size: 4vh;
+}
+
+/*Centra en columna el contenido de nosotros*/
+.nosotros_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion2_nosotros .introduccion {
+    color: var(--color-texto-principal);
+}
+
+.descripcion {
+    width: 90%;
+    color: var(--color-texto-secundario);
+    text-align: left;
+}
+
+.seccion2_nosotros .descripcion {
+    font-size: 3vh;
+    width: 85%;
+    color: var(--color-texto-principal);
+}
+
+.apartado_nosotros {
+    background-color: var(--color-secundario);
+    color: var(--color-fondo-principal);
+    height: 7vh;
+    border-radius: 3%;
+    padding-left: 2vh;
+    font-size: 3.5vh;
+    width: 85%;
+    display: flex;
+    align-items: flex-end; /*Mueve el texto al final del div en vertical*/
+}
+
+.descripcion.contacto {
+    color: var(--color-primario);
+}
+
+/*SECCIÓN 3*/
+.seccion3 {
+    background-color: var(--color-fondo-principal);
+    padding: 4vh 0;
+}
+
+.intro_servicios {
+    color: var(--color-texto-principal);
+    text-align: left;
+    font-size: 2.5vh;
+    width: 90%;
+    margin: 0 auto 4vh auto;
+}
+
+/*Organiza¡ los divs con el contenido en columnas y centrado*/
+.lista_servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/*Organiza el contenido de los divs en columna (icono - texto)*/
+.servicio_individual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4vh;
+}
+
+.forma-circulo {
+    background-color: var(--color-secundario);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-fondo-principal);
+    font-size: 150px;
+}
+
+.servicios {
+    font-size: 2.5vh;
+    margin: 1.5vh 0 1vh 0;
+    color: var(--color-texto-principal);
+}
+
+.descripcion_servicio {
+    font-size: 2vh;
+    color: var(--color-texto-principal);
+    margin: 0;
+}
+
+.invisible {
+    display: none;
+}
+
+/*SECCIÓN 4*/
+
+.seccion4 img {
+    width: 80%;
+    margin-top: 3vh;
+}
+
+/*Centra el div con el contenido en columnas*/
+.especialidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Centra el contenido*/
+.especialidades {
+    font-size: 3.5vh;
+    margin: 5vh 0 1vh 5%;
+    color: var(--color-primario);
+}
+
+.especialidades_descripcion {
+    text-align: left;
+    width: 80%;
+    font-size: 2vh;
+    color: var(--color-primario);
+    margin-left: 5%;
+}
+
+.boton_info {
+    padding: 1vh;
+    margin-bottom: 5vh;
+    background-color: var(--color-secundario);
+    height: 6vh;
+    border-radius: 5px;
+    color: var(--color-texto-secundario);
+    width: 50%;
+    font-size: 2vh;
+    /*Centra el texto del botón*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_blanco {
+    height: auto;
+    background-color: var(--color-fondo-principal);
+    width: 80%;
+    text-align: left;
+    padding-left: 2%;
+    margin-bottom: 3vh;
+    font-size: 2vh;
+}
+
+.seccion4.animacion {
+    justify-content: center;
+    background-image: url("../imagenes/fondo-servicios-p.jpg");
+}
+
+/*SECCIÓN 5 */
+.seccion5 {
+    background-color: var(--color-fondo-principal);
+    margin-top: 5vh;
+}
+
+.seccion5 img {
+    width: 100%;
+    border-radius: 2%;
+    margin-bottom: 3vh;
+}
+
+/*PÁGINA EN CONSTRUCCIÓN*/
+.seccion2_construccion {
+    margin-top: 25vh;
+    height: 70vh;
+    background-color: var(--color-fondo-principal);
+}
+
+.construccion i {
+    font-size: 17vh;
+    color: var(--color-secundario);
+}
+
+.construccion h2,
+.construccion p {
+    color: var(--color-primario);
+}
+
+.construccion p{
+    font-size: 2vh;
+}
+
+/*PÁGINA DE CONTACTO*/
+.seccion2_contacto {
+    height: auto;
+    background-color: var(--color-fondo-principal);
+    margin-top: 5vh;
+}
+
+.seccion2_contacto h3 {
+    color: var(--color-primario);
+}
+
+.detalles_contacto_titulo {
+    color: var(--color-primario);
+}
+
+.seccion2_contacto>div {
+    padding: 5% 3%;
+    border: 1px solid var(--color-primario);
+    width: 90%;
+    text-align: left;
+}
+
+.seccion2_contacto input:not([type="submit"]):not([type="reset"]),
+.seccion2_contacto textarea {
+    width: 100%;
+    height: 4vh;
+    padding: 1vh;
+    border: 1px solid var(--color-secundario);
+    border-radius: 5px;
+    margin-bottom: 3vh;
+    font-family: var(--fuente-principal);
+    box-sizing: border-box;
+}
+
+
+.seccion2_contacto textarea {
+    height: 80px;
+}
+
+.seccion2_contacto input::placeholder,
+.seccion2_contacto textarea::placeholder {
+    color: var(--color-secundario);
+    opacity: 0.7;
+}
+
+.seccion2_contacto input[type="submit"],
+.seccion2_contacto input[type="reset"] {
+    width: 45%;
+    height: 6vh;
+    background-color: var(--color-secundario);
+    border-radius: 3px;
+    border: none;
+    color: var(--color-fondo-principal);
+    font-size: 1.8vh;
+    cursor: pointer;
+}
+
+.botones_formulario {
+    border: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+/*FOOTER*/
+footer {
+    background-color: var(--color-texto-principal);
+    color: var(--color-texto-secundario);
+    text-align: center;
+    padding: 1vh;
+}
+
+footer i {
+    font-size: 3vh;
+    opacity: 0.5;
+    margin: 0 1vh;
+}
+
+/*Elimina la apariencia de enlace en los iconos*/
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+/* BOTÓN IR ARRIBA*/
+.ir_arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: var(--color-primario);
+    z-index: 1000; /*Hace que el elemento esté por encima del contenido*/
+}
+
+.ir_arriba:hover {
+    opacity: 0.8;
+}
+
+/* SERVICIOS*/
+
+
+.seccion2_servicios {
+    background-color: var(--color-secundario);
+}
+
+/*Centra el contenido en columnas*/
+.contenedor_servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4vh;
+    margin-bottom: 3vh;
+}
+
+.introduccion_servicios {
+    font-size: 5vh;
+    color: var(--color-fondo-principal);
+}
+
+.descripcion_servicios {
+    font-size: 2vh;
+    color: var(--color-fondo-principal);
+}
+
+.icono-servicios {
+    margin-bottom: 3vh;
+}
+
+.icono-servicios i {
+    font-size: 12vh;
+}
+
+
+/* MEDIA QUERIES - TABLET */
+@media (min-width: 750px) and (max-width: 1249px) {
+
+    /* Navegación */
+    #logo_img {
+        width: 200px;
+        height: 6vh;
+        margin-right: 2vh;
+    }
+
+    .navegacion {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: var(--color-fondo-principal);
+        padding: 1rem 2rem;
+    }
+
+    ul {
+        display: flex;
+        width: 100%;
+        font-size: 2vh;
+        color: var(--color-texto-principal);
+        justify-content: space-around;
+    }
+
+    li {
+        border: none;
+        text-align: center;
+        width: auto;
+    }
+
+    .seccion1.animacion {
+        justify-content: center;
+        background-image: url("../imagenes/fondo-interred-m.jpg");
+        background-position: center top;
+    }
+
+    .seccion4.animacion {
+        justify-content: center;
+        background-image: url("../imagenes/fondo-servicios-m.jpg");
+    }
+
+    .seccion1 {
+        min-height: 100vh;
+    }
+
+    .seccion1 div {
+        width: 65%;
+        font-size: 3vh;
+    }
+
+    .titulo {
+        font-size: 3.5vh;
+    }
+
+    /* SECCIÓN 3 - TABLET */
+    .intro_servicios {
+        text-align: left;
+        width: 85%;
+        font-size: 2.5vh;
+
+    }
+
+    .invisible {
+        display: none;
+    }
+
+    .lista_servicios {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 3vh 0;
+        gap: 3vh 0;
+    }
+
+    .servicio_individual {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    /* Servicios IZQUIERDA (1, 2, 3) - Texto a la izquierda del icono */
+    .lista_servicios> :nth-child(1),
+    .lista_servicios> :nth-child(2),
+    .lista_servicios> :nth-child(3) {
+        flex-direction: row-reverse;
+    }
+
+    /* Servicios DERECHA (4, 5, 6) - Icono a la izquierda del texto */
+    .lista_servicios> :nth-child(4),
+    .lista_servicios> :nth-child(5),
+    .lista_servicios> :nth-child(6) {
+        flex-direction: row;
+    }
+
+    /* Orden de servicios en 3 filas */
+    .lista_servicios> :nth-child(1) {
+        order: 1;
+    }
+
+    .lista_servicios> :nth-child(4) {
+        order: 2;
+    }
+
+    .lista_servicios> :nth-child(2) {
+        order: 3;
+    }
+
+    .lista_servicios> :nth-child(5) {
+        order: 4;
+    }
+
+    .lista_servicios> :nth-child(3) {
+        order: 5;
+    }
+
+    .lista_servicios> :nth-child(6) {
+        order: 6;
+    }
+
+    .forma-circulo {
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+        margin: 0 2vh;
+        flex-shrink: 0;
+    }
+
+
+    .servicios {
+        font-size: 2.2vh;
+        margin: 0;
+    }
+
+    .descripcion_servicio {
+        display: none;
+    }
+
+    .boton_info {
+        font-size: 3vh;
+    }
+
+    .especialidades_titulo {
+        font-size: 4vh;
+    }
+
+    .especialidades_descripcion {
+        align-self: center;
+    }
+
+    /* PROYECTOS */
+    .seccion5 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .seccion5 h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .proyecto {
+        width: 45%;
+        margin-bottom: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion5 h3 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1vh;
+    }
+
+    .seccion5 img {
+        width: 100%;
+        border-radius: 2%;
+        margin: 0;
+    }
+
+    /* NOSOTROS */
+    .seccion2_nosotros .descripcion {
+        font-size: 2vh;
+    }
+
+    .apartado_nosotros {
+        align-items: center;
+        font-size: 4vh;
+        font-weight: 500;
+    }
+
+    /* SERVICIOS */
+    .seccion2_servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(--color-secundario);
+    }
+
+    .contenedor_servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .introduccion_servicios {
+        background-color: var(--color-fondo-principal);
+        margin-top: 4vh;
+        width: 80%;
+        padding: 2vh;
+        box-sizing: border-box;
+    }
+
+    .icono-servicios {
+        color: var(--color-primario);
+    }
+
+    .introduccion_servicios p {
+        color: var(--color-primario);
+        font-size: 3vh;
+        margin: 0;
+    }
+
+    .descripcion_servicios {
+        text-align: center;
+        font-size: 2vh;
+        background-color: var(--color-fondo-principal);
+        color: var(--color-primario);
+        width: 80%;
+        margin: 0;
+        box-sizing: border-box;
+        border: none;
+        outline: none;
+        padding-left: 5vh;
+        padding-right: 5vh;
+    }
+
+    .div_blanco {
+        width: 80%;
+        background-color: var(--color-fondo-principal);
+        margin: 0;
+        margin-bottom: 2vh;
+        padding-bottom: 3vh;
+        box-sizing: border-box;
+        border: none;
+        align-self: center;
+        padding-left: 10vh;
+        padding-right: 2vh;
+    }
+
+    /* CONTACTO */
+    .seccion2_contacto h3 {
+        font-size: 3vh;
+    }
+
+    .descripcion.contacto p:nth-child(3) {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .seccion2_contacto input::placeholder,
+    .seccion2_contacto textarea::placeholder {
+        font-size: 2vh;
+    }
+
+    .seccion2_contacto label {
+        font-size: 2vh;
+    }
+
+    .seccion2_contacto input[type="submit"],
+    .seccion2_contacto input[type="reset"] {
+        width: 35%;
+    }
+
+    .ir_arriba {
+        font-size: 40px;
+    }
+}
+
+
+/* MEDIA QUERIES - PC */
+@media (min-width: 1250px) {
+
+    /* el diseño quedará como máximo
+    en 1920px y centrado en la pantalla. */
+    body {
+        max-width: 1920px;
+        margin: 0 auto;
+        /* Centra horizontalmente */
+    }
+
+    /* Navegación */
+    #logo_img {
+        width: 200px;
+        height: 8vh;
+        margin-right: 2vh;
+    }
+
+    .navegacion {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: var(--color-fondo-principal);
+        padding: 1rem 2rem;
+    }
+
+    /* Lista de enlaces en NAVEGACIÓN */
+    ul {
+        display: flex;
+        width: 100%;
+        font-size: 2vh;
+        color: var(--color-primario);
+        justify-content: flex-end;
+        gap: 2.5rem;
+    }
+
+    /* Elementos del menú centrados, sin bordes*/
+    li {
+        border: none;
+        text-align: center;
+        width: auto;
+        font-size: 3vh;
+    }
+
+    /* Icono flecha */
+    .ir_arriba {
+        font-size: 80px;
+    }
+
+    /*SECCIÓN 1 INDEX*/
+
+    /* Imágenes tamaño GRANDE */
+    .seccion1.animacion {
+        justify-content: center;
+        background-image: url("../imagenes/fondo-interred-g.jpg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .titulo {
+        font-size: 6vh;
+    }
+
+    .seccion1 {
+        min-height: 100vh;
+    }
+
+    .seccion1 div {
+        width: 50%;
+        font-size: 3vh;
+    }
+
+    /*SECCIÓN 2 INDEX*/
+
+    .descripcion {
+        font-size: 3vh;
+    }
+
+    .introduccion {
+        width: 80%;
+    }
+
+    .descripcion {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        /*organiza los hijos en columna (verticalmente)*/
+        align-items: center;
+        /*Centra los elementos horizontalmente en el div, hace que la img se centre*/
+    }
+
+    .descripcion img {
+        width: 50%;
+    }
+
+    /*SECCIÓN 3 INDEX*/
+    .intro_servicios {
+        text-align: center;
+        width: 80%;
+        font-size: 2.5vh;
+        margin: 0 auto 6vh auto;
+    }
+
+    .lista_servicios {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 6vh 0;
+        background-image: url('../imagenes/empresa3.svg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 330px;
+        position: relative;
+        gap: 0 350px; /*Espacio a la derecha e izquierda de la imagen*/
+    }
+
+    .servicio_individual {
+        width: 450px;
+        margin-bottom: 6vh;
+    }
+
+    /* Columna IZQUIERDA (TEXTO - ICONO) */
+    .lista_servicios> :nth-child(1),
+    .lista_servicios> :nth-child(2),
+    .lista_servicios> :nth-child(3) {
+        flex-direction: row-reverse;
+    }
+
+    /* Columna DERECHA (ICONO - TEXTO) */
+    .lista_servicios> :nth-child(4),
+    .lista_servicios> :nth-child(5),
+    .lista_servicios> :nth-child(6) {
+        flex-direction: row;
+    }
+
+    /* Orden de servicios (2 columnas) */
+    .lista_servicios> :nth-child(1) {
+        order: 1;
+    }
+
+    .lista_servicios> :nth-child(2) {
+        order: 3;
+    }
+
+    .lista_servicios> :nth-child(3) {
+        order: 5;
+    }
+
+    .lista_servicios> :nth-child(4) {
+        order: 2;
+    }
+
+    .lista_servicios> :nth-child(5) {
+        order: 4;
+    }
+
+    .lista_servicios> :nth-child(6) {
+        order: 6;
+    }
+
+    .forma-circulo {
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .titulo_descripcion {
+        flex: 1; /*Reparte el espacio de los elementos por igual*/
+        text-align: center;
+        padding: 0 2vh;
+    }
+
+    .servicios {
+        font-size: 2.2vh;
+        margin: 0 0 1vh 0;
+    }
+
+    .descripcion_servicio {
+        font-size: 1.6vh;
+        line-height: 1.4;
+        display: block;
+    }
+
+    .invisible {
+        display: block;
+    }
+
+    /* SECCIÓN 4 INDEX */
+    .seccion4.animacion {
+        justify-content: center;
+        background-image: url("../imagenes/fondo-servicios-g.jpg");
+    }
+
+    /*El contenido se organiza en filas horizontales*/
+    .seccion4 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 5vh;
+    }
+
+    .especialidades_titulo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5vh;
+        font-size: 5vh;
+    }
+
+    /*El contenido de dentro de cada especialidad se ordena en columnas centradas*/
+    .especialidad {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        max-width: 30%;
+    }
+
+    .especialidad img {
+        width: 60%;
+        margin-bottom: 2vh;
+    }
+
+    .especialidades {
+        font-size: 3vh;
+    }
+
+    .especialidades_descripcion {
+        font-size: 2vh;
+    }
+
+    .boton_info {
+        font-size: 2vh;
+        width: 40%
+    }
+
+    /* Descripción centrada */
+    .especialidades_descripcion {
+        align-self: center;
+    }
+
+    /* IMÁGENES PROYECTOS USANDO space-around/wrap/row */
+    .seccion5 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .seccion5 h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    /*Tamaño de las img mas pequeño (filas de 4 en 4)*/
+    .proyecto {
+        width: 20%;
+        margin-bottom: 3vh;
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+
+    .seccion5 h3 {
+        font-size: 25px;
+        width: 100%;
+        margin-bottom: 1vh;
+    }
+
+    .proyecto img {
+        width: 100%;
+        border-radius: 2%;
+        margin: 0;
+    }
+
+    /*NOSOTROS*/
+
+    .seccion2_nosotros .descripcion {
+        font-size: 2vh;
+        width: 75%;
+    }
+
+    /*Apartados mision, vision y valores centrado*/
+    .apartado_nosotros {
+        align-items: center;
+        font-size: 4vh;
+        font-weight: 500;
+    }
+
+    .seccion2_nosotros img {
+        width: 30%;
+    }
+
+    /*SERVICIOS*/
+
+    /*Los contenedores se alinean horizontalmente y el contenido empieza desde el principio*/
+    .seccion2_servicios {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        background-color: var(--color-secundario);
+    }
+
+    /*El contenido de los contenedores se alinean verticalmente*/
+    .contenedor_servicios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .introduccion_servicios {
+        background-color: var(--color-fondo-principal);
+        margin-top: 4vh;
+        width: 90%;
+        padding: 2vh;
+        box-sizing: border-box;
+    }
+
+    .icono-servicios {
+        color: var(--color-primario);
+    }
+
+    .introduccion_servicios p {
+        color: var(--color-primario);
+        font-size: 3vh;
+        margin: 0;
+
+    }
+
+    .descripcion_servicios {
+        text-align: center;
+        font-size: 2vh;
+        background-color: var(--color-fondo-principal);
+        color: var(--color-primario);
+        width: 90%;
+        margin: 0;
+        box-sizing: border-box;
+        /*Ajusta el div al tamaño del contenedor*/
+        border: none;
+        outline: none;
+        padding-left: 5vh;
+        padding-right: 5vh;
+    }
+
+    .div_blanco {
+        width: 90%;
+        background-color: var(--color-fondo-principal);
+        margin: 0;
+        margin-bottom: 2vh;
+        padding-bottom: 3vh;
+        box-sizing: border-box;
+        /*ajusta el div al tamaño del contenedor*/
+        border: none;
+        align-self: center;
+        padding-left: 10vh;
+        padding-right: 2vh;
+
+    }
+
+    /*CONTACTO*/
+    .seccion2_contacto h3 {
+        font-size: 4vh;
+    }
+
+    .descripcion.contacto p:nth-child(3) {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .seccion2_contacto input::placeholder,
+    .seccion2_contacto textarea::placeholder {
+        font-size: 2.5vh;
+    }
+
+
+    .seccion2_contacto label {
+        font-size: 3vh;
+
+    }
+
+    .detalles_contacto_titulo {
+        font-size: 3vh;
+    }
+
+    .seccion2_contacto input[type="submit"],
+    .seccion2_contacto input[type="reset"] {
+        width: 35%;
+    }
+
+}

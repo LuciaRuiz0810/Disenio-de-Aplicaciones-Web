@@ -1,0 +1,96 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Móvil */
+@media (max-width: 599px) {
+    .datos ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .datos li {
+        display: inline;
+    }
+
+    /* Se añade el ; entre los datos*/
+    .datos li::after {
+        content: "; ";
+    }
+
+    /* Se quita el último ; */
+    .datos li:last-child::after {
+        content: "";
+    }
+}
+
+/* Tablet*/
+@media (min-width: 600px) and (max-width: 1199px) {
+    .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .datos,
+    .descripcion {
+        width: 45%;
+    }
+
+    .contenido {
+        width: 45%;
+        margin-left: auto;
+        margin-top: 20px;
+    }
+
+    .contenido ul {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    .contenido ul li {
+        width: 30%;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 1200px) {
+    .contenedor {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .datos,
+    .descripcion,
+    .contenido {
+        width: 30%;
+    }
+
+    .contenido ul {
+        display: block;
+        padding-left: 20px;
+        list-style: disc;
+    }
+
+    .contenido ul li {
+        width: auto;
+    }
+}

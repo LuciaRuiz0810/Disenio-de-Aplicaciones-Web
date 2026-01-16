@@ -1,0 +1,64 @@
+#coche1 {
+  left: 0px;
+  position: absolute;
+  top: 200px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: inline;
+  text-align: center;
+}
+
+#coche2 {
+  left: 400px;
+  position: absolute;
+  top: 200px;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: inline;
+  text-align: center;
+}
+
+@keyframes animacionCoche1 {
+  from {
+    left: 0px;
+  }
+
+  65% {
+    left: 10px;
+  }
+
+  to {
+    left: 350px;
+  }
+}
+
+@keyframes animacionCoche2 {
+  from {
+    left: 400px;
+  }
+
+  65% {
+    left: 550px;
+  }
+
+  to {
+    left: 600px;
+  }
+}
+
+.aCoche1 {
+  animation-duration: 3s;
+  animation-name: animacionCoche1;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  /* animation: 3s animacionCoche1 1 forwards; */
+}
+
+.aCoche2 {
+  animation-duration: 3s;
+  animation-name: animacionCoche2;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
